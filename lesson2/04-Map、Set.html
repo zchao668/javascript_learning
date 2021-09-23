@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        //Map 键值对
+        var map = new Map([['tom',95],['bob',100],['jack',80]]);
+
+        map.set('admin',60); //添加
+        map.has('admin'); //map中是否存在admin true
+        map.get('admin'); //100
+        map.delete('admin');
+
+        //map中一个key只能对应一个值;
+
+        //Set  集合（不重复）
+        //也是一组key的集合，但不存储value。由于key不能重复，所以，在Set 中，
+        //没有重复的key。
+        var s = new Set([1,2,'3']);
+        s.add(4);
+        s.delete(4);
+
+        //Iterable
+        //Array，Map，Set 属于；
+        //具有iterable 类型的集合可以通过新的for ... of 循环来遍历。
+        for(var i of s){
+            console.log(i); //遍历set
+        }
+        for (var i of map){
+            console.log(x[0] + '=' + x[i]);
+        }
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+
+        var person = {
+            age: 13,
+            name: 'tom',
+            likeApple: true
+        }
+
+        //获取对象的属性
+        person.age;//13
+
+        //可以动态的给对象添加或者删除属性
+        person.score = 19;
+        delete person.age;
+
+        //要判断一个属性是否是 xiaoming 自身拥有的，而不是继承得到的，可以用 hasOwnProperty() 方法：
+        person.hasOwnProperty('name'); // true
+        person.hasOwnProperty('toString'); // false
+
+        //for遍历
+        for (let i = 0; i < arr.length ; i++) {
+            console.log(arr[i]);
+        }
+
+        //for..in遍历
+        var arr1 = ['a','b','c'];
+        for (var i in arr1){
+            console.log(arr1[i]);
+        }
+
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
